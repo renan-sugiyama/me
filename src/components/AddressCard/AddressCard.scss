@@ -1,3 +1,39 @@
+@import "./../../styles/variables.scss";
+
 .address-card {
-  //
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  padding: 15px;
+  -webkit-box-shadow: 0px 2px 11px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 11px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 11px -8px rgba(0, 0, 0, 0.75);
+
+  &__label {
+    color: $gray;
+  }
+
+  &__name {
+    margin-bottom: 6px;
+
+    &--title {
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+
+    &--code {
+      color: $dark-gray;
+      font-style: italic;
+      font-weight: normal;
+    }
+  }
+
+  &__icon {
+    color: $gray;
+    vertical-align: -1px;
+    margin-right: 5px;
+  }
+
+  & > span {
+    margin-bottom: 6px;
+  }
 }
