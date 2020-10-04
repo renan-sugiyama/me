@@ -16,7 +16,7 @@ export function HeaderComponent(
 ) {
 
   return (
-    <div className="header-component row">
+    <header className="header-component row">
 
         <div className="header-component__purchase-order col-md-3">
           <div className="row flex-column pl-3">
@@ -75,6 +75,6 @@ export function HeaderComponent(
           </div>
         </div>
 
-    </div >
+    </header >
   )
 }
