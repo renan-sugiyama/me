@@ -1,5 +1,7 @@
 Projeto criado com [Create React App](https://github.com/facebook/create-react-app).
 
+Para acessar o projeto online: [Versão online](https://me-challenge.netlify.app/).
+
 ## Libs utilizadas
 - [React](https://github.com/facebook/create-react-app): base do projeto;
 - [Boostrap 4](https://getbootstrap.com): para estilização;
