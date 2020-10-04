@@ -14,7 +14,6 @@ export function SupplierCard(
     supplier,
   }
 ) {
-  console.log(supplier)
 
   return (
     <div className="supplier-card d-flex flex-column w-100">

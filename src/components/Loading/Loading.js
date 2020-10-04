@@ -7,7 +7,7 @@ import './Loading.scss';
 export function Loading() {
   return (
     <div className="loading">
-      <VscLoading className="loading__icon" />
+      <VscLoading className="loading__icon" data-testid="loading" />
     </div >
   )
 }
