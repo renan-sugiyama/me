@@ -1,6 +1,6 @@
 @import "./../../styles/variables.scss";
 
-.address-card {
+.supplier-card {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.07);
   padding: 15px;
@@ -13,17 +13,24 @@
   }
 
   &__name {
-
+    font-weight: 600;
     &--title {
       font-size: 14px;
-      font-weight: 600;
+      color: $primary-color
     }
 
     &--code {
-      color: $dark-gray;
-      font-style: italic;
-      font-weight: normal;
+      color: $gray;
+      display: inline-block;
+      padding: 4px 8px;
+      background-color: $primary-color-light;
+      border-radius: 12.5px;
+      margin-left: 10px;
     }
+  }
+
+  &__email {
+    color: $primary-color;
   }
 
   &__icon {
