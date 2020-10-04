@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 #root,
 html,
 body {
@@ -19,4 +21,13 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: $primary-color;
 }

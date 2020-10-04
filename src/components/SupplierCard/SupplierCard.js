@@ -66,7 +66,7 @@ export function SupplierCard(
           </div>
         </div>
 
-        <div className="col-xl-3">
+        <div className="col flex-grow-0 supplier-card__dates">
           <div className="row flex-column">
             <div className="col-12 mb-2 mb-xl-1">
               <span><FaRegEye className="supplier-card__icon" />Read:  {getDateFormated(new Date(supplier.readAt))}</span>
