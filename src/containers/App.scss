@@ -1,0 +1,43 @@
+@import "./../styles/variables.scss";
+.app {
+  height: 100%;
+  width: 100%;
+}
+
+.purchase-modal {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 90vw;
+  height: 90vh;
+  background-color: white;
+  border-radius: 10px;
+  overflow: auto;
+
+  .addresses__section {
+    
+    &__title {
+      display: flex;
+      align-items: center;
+
+      &__icon {
+        color: $primary-color;
+        background-color: $primary-color-light;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        margin-right: 7px;
+        line-height: 20px;
+      }
+
+      &__text {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+      }
+    }
+  }
+}

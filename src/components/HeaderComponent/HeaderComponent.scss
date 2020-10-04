@@ -1,0 +1,118 @@
+@import "./../../styles/variables.scss";
+$logo-dimension: 60px;
+
+.header-component {
+  &__purchase-order {
+    position: relative;
+    background-color: $primary-color;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 8px 60px 8px 15px;
+    color: white;
+    margin-right: calc(#{$logo-dimension} / 2);
+
+    @media only screen and (max-width: 850px) {
+      min-width: 200px;
+    }
+
+    &__logo {
+      height: $logo-dimension;
+      width: $logo-dimension;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      background-color: white;
+      transform: translate(50%, -50%);
+      border: 2px solid black;
+      z-index: 999;
+      border-radius: 50%;
+
+      @media only screen and (max-width: 850px) {
+        height: calc(#{$logo-dimension} - 10px);
+        width: calc(#{$logo-dimension} - 10px);
+      }
+
+      @media only screen and (max-width: 768px) {
+        right: calc(#{$logo-dimension} / 2);
+      }
+
+      &__img {
+        height: 40%;
+        width: auto;
+      }
+    }
+
+    &__title {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      min-width: 200px;
+    }
+
+    &__number {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    &__serial {
+      font-size: 12px;
+      font-style: italic;
+    }
+  }
+
+  &__buyer {
+    padding-top: 8px;
+    margin-right: calc((#{$logo-dimension} / 2) * -1);
+
+    @media only screen and (max-width: 768px) {
+      & > .row {
+        padding-left: 1rem;
+      }
+    }
+
+    &__name {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    @media only screen and (max-width: 1040px) {
+      &__contact {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__order {
+    min-width: 250px;
+    text-align: end;
+    padding-right: 30px;
+
+    @media only screen and (max-width: 576px) {
+      text-align: initial;
+      padding-top: 8px;
+      & > .row {
+        padding-left: 1rem;
+      }
+    }
+
+    &__price {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    &__status {
+      font-size: 16px;
+      color: #f5a623;
+      font-weight: 600;
+    }
+  }
+
+  &__icon {
+    color: $primary-color-dark;
+    vertical-align: -1px;
+    margin-right: 5px;
+  }
+}

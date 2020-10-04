@@ -1,0 +1,51 @@
+@import "./../../styles/variables.scss";
+
+.supplier-card {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  padding: 15px;
+  -webkit-box-shadow: 0px 2px 11px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 11px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 11px -8px rgba(0, 0, 0, 0.75);
+
+  &__label {
+    color: $gray;
+  }
+
+  &__name {
+    font-weight: 600;
+    &--title {
+      font-size: 14px;
+      color: $primary-color
+    }
+
+    &--code {
+      color: $gray;
+      display: inline-block;
+      padding: 4px 8px;
+      background-color: $primary-color-light;
+      border-radius: 12.5px;
+      margin-left: 10px;
+    }
+  }
+
+  &__email {
+    color: $primary-color;
+  }
+
+  &__dates {
+    min-width: 200px;
+
+    @media only screen and (max-width: 1200px) {
+      min-width: 100%;
+    }
+  }
+
+  &__icon {
+    color: $gray;
+    vertical-align: -1px;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+
+}
