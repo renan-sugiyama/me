@@ -12,8 +12,6 @@ export function AddressCard(
     address,
   }
 ) {
-  console.log(address)
-
   return (
     <div className="address-card d-flex flex-column w-100">
 
