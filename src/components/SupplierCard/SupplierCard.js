@@ -7,7 +7,7 @@ import { RiArrowGoBackLine } from "react-icons/ri";
 
 
 import './SupplierCard.scss';
-import { getDateFormated } from '../../app/utils/string';
+import { getDateAndTimeFormated, getDateFormated } from '../../app/utils/string';
 
 export function SupplierCard(
   {
@@ -68,10 +68,10 @@ export function SupplierCard(
         <div className="col flex-grow-0 supplier-card__dates">
           <div className="row flex-column">
             <div className="col-12 mb-2 mb-xl-1">
-              <span><FaRegEye className="supplier-card__icon" />Read:  {getDateFormated(new Date(supplier.readAt))}</span>
+              <span><FaRegEye className="supplier-card__icon" />Read:  {getDateAndTimeFormated(new Date(supplier.readAt))}</span>
             </div>
             <div className="col-12 mb-2 mb-xl-1">
-              <span><RiArrowGoBackLine className="supplier-card__icon" />Last Reply: {getDateFormated(new Date(supplier.lastReplyAt))}</span>
+              <span><RiArrowGoBackLine className="supplier-card__icon" />Last Reply: {getDateAndTimeFormated(new Date(supplier.lastReplyAt))}</span>
             </div>
           </div>
         </div>

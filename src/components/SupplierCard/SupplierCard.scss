@@ -16,7 +16,8 @@
     font-weight: 600;
     &--title {
       font-size: 14px;
-      color: $primary-color
+      color: $primary-color;
+      margin-right: 10px;
     }
 
     &--code {
@@ -25,7 +26,6 @@
       padding: 4px 8px;
       background-color: $primary-color-light;
       border-radius: 12.5px;
-      margin-left: 10px;
     }
   }
 
@@ -34,7 +34,7 @@
   }
 
   &__dates {
-    min-width: 200px;
+    min-width: 250px;
 
     @media only screen and (max-width: 1200px) {
       min-width: 100%;
